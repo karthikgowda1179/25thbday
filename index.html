@@ -12,9 +12,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="_/css/screen.css">
+        <script src="_/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,12 +21,365 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#details">details</a></li>
+                <li><a href="#itinerary">itinerary</a></li>
+                <li><a href="#flights">flights</a></li>
+                <li class="spacer"></li>
+                <li><a href="#accomodation">accomodation</a></li>
+                <li><a href="#transportation">transportation</a></li>
+                <li><a href="#rsvp">rsvp</a></li>
+            </ul>
+        </nav>
+        <div class="nav-holder"></div>
+
+        <!-- Main Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page main" id="main">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Details Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page details" id="details"> 
+                 <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+                <p class="maintext">I'm turning 25, and i'd really love it for you to join me in vegas for the week (or howevery long you can stay).. don't worry.. whatever happens in vegas.. stays in vegas...</p>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Itinerary Page -->
+        <div class="frame">
+            
+            <div class="day1content">
+                <div class="x-close">x</div>
+                <h1>Day 1</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Arrival in Las Vegas</h2>
+                    <p><span class="time">1pm-6pm - </span>Shuttle from Airport to House</p>
+                    <p>Note: If you arrive after this time, you might have to take a Taxi to the house</p>
+                    <h2>Grocery Shopping/ABC Store - Optional</h2>
+                    <p><span class="time">6:30pm-8pm - </span>This is optional, but since the house has a full kitchen, if you are staying for the weekend or during the week and want to buy things to eat this can save you money on the trip. It's always cheaper to pre-game :) </p>
+                    <p>NOTE: Most the essentials will be already available e.g. Eggs, bread, water, etc etc.. this is for people who have something else in mind</p>
+                    <h2>Welcome Dinner</h2>
+                    <p><span class="time">10pm - </span>Lets all go out to eat, chat and get to know each other!</p>
+                    <div class="indent">
+                        <h2 class="short">MGM Grand Wok and Sushi Bar</h2>
+                        <div class="clear"></div>
+                        <img src="/_/img/sushi.jpg">
+                        <p><a href="http://www.mgmgrand.com/restaurants/grand-wok-sushi-restaurant.aspx">Website</a></p>
+                        <p>Average bill - <span class="time">$25/person</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="day2content">
+                <div class="x-close">x</div>
+                <h1>Day 2 - My Birthday!</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-3:30pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>Lunch</h2>
+                    <p><span class="time">3:30pm - 5pm - </span>Lets grill up some burgers and hotdogs with the outdoor grill, and enjoy some food in the sun!</p>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">5pm - 6pm - </span>Let's get ready to hit the Strip!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Casino!</h2>
+                    <div class="indent">
+                        <h2 class="short">Wynn Casino - <a href="http://www.wynnlasvegas.com/Casino">Website</a></h2>
+                        <div class="clear"></div>
+                        <p><span class="time">6pm-11pm - </span>Let's try to bring home some money, without going for broke!</p>
+                    </div>
+                    <h2>Club!</h2>
+                    <p><span class="time">11pm-4am - </span>Parttaayyy!</p>
+                    <div class="indent">
+                        <h2 class="short">Pure Nightclub</h2>                        
+                        <div class="clear"></div>
+                        <p>No. 1 Club in the country by E! </p>
+                        <span class="time">Free to $20 for Men; Free for Women</span>
+                        <p>ATTIRE: Business Casual</p>
+                        <br><br>
+                        <img src="/_/img/pure.jpg">
+                        <br>
+                        <p><a href="http://angelmg.com/venues/pure/">Website</a></p>
+                        <p>Located within the Bellagio Hotel so walking distance for us!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="day3content">
+                <div class="x-close">x</div>
+                <h1>Day 3</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-3:30pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>Lunch</h2>
+                    <p><span class="time">3:30pm - 5pm - </span>Let's mix it up and get some lunch somewhere</p>
+                    <div class="indent">
+                        <h2 class="short">Hussong's Cantina</h2>
+                        <div class="clear"></div>
+                        <img src="/_/img/mexican.jpg">
+                        <p><a href="http://www.hussongslasvegas.com/index.html">Website</a></p>
+                        <p>Average bill - <span class="time">$20/person</span></p>
+                    </div>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">5pm - 6pm - </span>Let's get ready to hit the Strip!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Casino!</h2>
+                    <div class="indent">
+                        <h2 class="short">Ceaser's Palace - <a href="http://www.caesarspalace.com/casino.html">Website</a></h2>
+                        <div class="clear"></div>
+                        <p><span class="time">6pm-11pm - </span>Let's try to bring home some money, without going for broke!</p>
+                    </div>
+                    <h2>Club!</h2>
+                    <p><span class="time">11pm-4am - </span>Parttaayyy!</p>
+                    <div class="indent">
+                        <h2 class="short">Tryst Club</h2>                        
+                        <div class="clear"></div>
+                        <img src="/_/img/tryst.jpg">
+                        <br>
+                        <span class="time">$20 for Men; Free for Women</span>
+                        <p><a href="http://www.trystlasvegas.com/">Website</a></p>
+                        <p>Proper Attire Required: Dress to impress, no baggy clothing, jeans, or basketball shorts.</p>
+                        <p>Located within the Wynn Hotel so walking distance for us!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="day4content">
+                <div class="x-close">x</div>
+                <h1>Day 4</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-1:00pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">1pm - 2pm - </span>Let's get ready to hit the Town!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Theme Park!</h2>
+                    <div class="indent">
+                        <h2 class="short">Adventuredome (indoor theme park) - <a href="http://www.adventuredome.com/">Website</a></h2>
+                        <div class="clear"></div>
+                        <p><span class="time">2pm-6pm - </span>Let's let out our inner kid and hit the rides!</p>
+                        <span class="time">$27.95</span>
+                    </div>
+                    <h2>Dinner</h2>
+                    <p><span class="time">6pm-7:30pm - </span>Let's have dinner at the house!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">7:30pm-until Sleep - </span>Do what you want! Hit the town.. late night pool volleyball, watch tv.. watch a movie.. anything you wish .. you do!</p>
+                </div>
+            </div>
+            <div class="day5content">
+                <div class="x-close">x</div>
+                <h1>Day 5 - Joshua's Birthday!</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-3:30pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>Lunch</h2>
+                    <p><span class="time">3:30pm - 5pm - </span>Lets grill up some burgers and hotdogs with the outdoor grill, and enjoy some food in the sun!</p>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">5pm - 6pm - </span>Let's get ready to hit the Strip!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Casino!</h2>
+                    <div class="indent">
+                        <h2 class="short">Bellagio Casino - <a href="http://www.bellagio.com/casino/">Website</a></h2>
+                        <div class="clear"></div>
+                        <p><span class="time">6pm-11pm - </span>Let's try to bring home some money, without going for broke!</p>
+                    </div>
+                    <h2>Club!</h2>
+                    <p><span class="time">11pm-4am - </span>Parttaayyy!</p>
+                    <div class="indent">
+                        <h2 class="short">The Bank Club</h2>                        
+                        <div class="clear"></div>
+                        <span class="time">$40 for Men and $30 for Women</span>
+                        <br><br>
+                        <img src="/_/img/bank.jpg">
+                        <br>
+                        <p><a href="http://www.bellagio.com/nightlife-diversions/the-bank.aspx">Website</a></p>
+                        <p>Located within the Bellagio Hotel so walking distance for us!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="day6content">
+                <div class="x-close">x</div>
+                <h1>Day 6</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-1:00pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">1pm - 2pm - </span>Let's get ready to hit the Town!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Casino & Fun!</h2>
+                    <div class="indent">
+                        <h2 class="short">Straosphere Hotel - <a href="http://www.stratospherehotel.com/">Website</a></h2>
+                        <div class="clear"></div>
+                        <p><span class="time">2pm-9pm - </span>Let's let out our inner kid and hit the rides and also gamble away!</p>
+                        <span class="time">Rides: $34 all day ulimited rides - <a href="http://www.stratospherehotel.com/Tower/Rides">Website</a></span>
+                        <p>Rides: </p>
+                        <ul>
+                            <li><span class="time">X-Scream</span> - a giant teeter-totter, 866 feet above the ground</li>
+                            <li><span class="time">Insanity</span> - A massive mechanical arm extending out 64 feet over the edge of the Stratosphere Tower at a height of over 900 feet, this Vegas ride will spin you and several other passengers in the open air at speeds of up to three 'G's.</li>
+                            <li><span class="time">Big Shot</span> - Strap into the Big Shot and prepare to be shot 160 feet in the air at 45 miles per hour as you overlook the majestic Las Vegas Valley. In a matter of seconds, the Big Shot thrill ride catapults 16 riders from the 921-foot high platform up the Tower's mast to a height of 1,081 feet and down again.</li>
+                        </ul>
+                    </div>
+                    <h2>Dinner</h2>
+                    <p><span class="time">9pm-10pm - </span>Let's have dinner at the house!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10pm-until Sleep - </span>Do what you want! Hit the town.. late night pool volleyball, watch tv.. watch a movie.. anything you wish .. you do!</p>
+                </div>
+            </div>
+            <div class="day7content">
+                <div class="x-close">x</div>
+                <h1>Day 7</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time!</p>
+                    <h2>Free Time</h2>
+                    <p><span class="time">10am-5:00pm - </span>There's a pool, hottub, volley ball court at the house.. also a casino walking distance from the house.</p>
+                    <h2>T-Shirt Time</h2>
+                    <p><span class="time">5pm - 6pm - </span>Let's get ready to hit the Town!!</p>
+                    <br>
+                    <img src="/_/img/tshirttime.gif">
+                    <br>
+                    <h2>Farewell Dinner</h2>
+                    <p><span class="time">6pm - until</span>Still here? Yay! Now let's say goodbye by eating.. and then .. who knows?</p>
+                    <div class="indent">
+                        <h2 class="short">Center Cut at the Flamingo Las Vegas</h2>
+                        <div class="clear"></div>
+                        <img src="/_/img/steak.jpg">
+                        <p><a href="http://www.flamingolasvegas.com/restaurants/center-cut-steakhouse.html#.UeoalWT700M">Website</a></p>
+                        <p>Average bill - <span class="time">$50/person</span></p>
+                    </div>
+                </div>
+            </div>
+             <div class="day8content">
+                <div class="x-close">x</div>
+                <h1>Day 8</h1>
+                <hr>
+                <div class="agenda">
+                    <h2>Breakfast</h2>
+                    <p><span class="time">9am-10am - </span>Breakfast time! (if you Can)</p>
+                    <h2>Lounge until Flight</h2>
+                    <p><span class="time">10am- UNTIL </span>Lounge around until your flight and we'll make shuttle runs to the airport</p>
+                </div>
+            </div>
+            <div class="black-overlay"></div>
+
+            <div class="page itinerary" id="itinerary">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+                <div class="day">Day 1</div>
+                <div class="day">Day 2</div>
+                <div class="day">Day 3</div>
+                <div class="day">Day 4</div>
+                <div class="day">Day 5</div>
+                <div class="day">Day 6</div>
+                <div class="day">Day 7</div>
+                <div class="day">Day 8</div>
+
+                
+            </div>
+        </div>
+
+        <!-- Flights Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page flights" id="flights">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+                <div class="search-widget">
+                    <div id='searchform_635098596250315615'></div><script type='text/javascript' src='http://widgets.partners.expedia.com/daily/shared/affiliates/WidgetService.aspx?partner=direct&size=300x250&window=new&branded=true&products=flights&defaultsearch=Las+Vegas+(and+vicinity)%2c+Nevada&widgetname=searchform&divid=searchform_635098596250315615&langid=1033'></script>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acoomodation Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page accomodation" id="accomodation">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Transportation Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page transportation"  id="transportation">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- RSVP Page -->
+        <div class="frame">
+            <div class="black-overlay"></div>
+            <div class="page rsvp" id="rsvp">
+                <a href="#main">
+                    <div class="arrow-down"> 
+                        <div class="arrow-label">PARTY!</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="_/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="_/js/plugins.js"></script>
+        <script src="_/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

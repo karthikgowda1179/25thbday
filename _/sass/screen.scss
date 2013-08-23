@@ -4,3 +4,317 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "fonts";
+@import "accordion";
+
+body {overflow:hidden;}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+.transition {
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+a, a:link, a:visited, a:active {
+	color: #222222;
+	text-decoration: none;
+	cursor: pointer !important;
+	@extend .transition;
+}
+a:hover {
+	color: #00a6f3;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.frame {
+	display: block; /* shrink to fit */
+	width: 100%; /* whatever width you like */
+	height:100%;
+	position: relative; /* so .content can use position: absolute */
+
+	&::after {
+		padding-top: 56.25%; /* percentage of containing block _width_ */
+		display: block;
+		content: '';
+	}
+
+	h1 {
+			font-family: homizio;
+			color:#000;
+			font-size: 40px;
+		}
+
+		.black-overlay {
+			cursor: pointer;
+			display:none;
+			width: 100%;
+			height: 100%;
+			background: #222;
+			position: relative;
+			z-index: 100000;
+			opacity: 0.8;
+		}
+
+		.page {
+			position: absolute;
+			top: 0; bottom: 0; right: 0; left: 0; /* follow the parent's edges */
+			
+			img {
+				position: absolute;
+			    width: 100%;
+			    top: 0px;
+			    z-index: -1;
+			}
+			&.main {
+				background-image: url("/_/img/bg.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.details {
+				background-image: url("/_/img/page_2.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.itinerary {
+				background-image: url("/_/img/page_3.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.flights {
+				background-image: url("/_/img/page_4.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.accomodation {
+				background-image: url("/_/img/page_5.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.transportation {
+				background-image: url("/_/img/page_6.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+			&.rsvp {
+				background-image: url("/_/img/page_7.jpg");
+				background-repeat: no-repeat;  
+				background-size: cover;
+				background-position:center;
+			}
+		}
+}
+
+
+.nav-holder {
+	position: fixed;
+	z-index: 1000;
+	top:0px;
+	background-color: #eee;
+	width: 100%;
+	opacity: 0.7;
+	height: 45px;
+	box-shadow: 0 0 2px #333;
+}
+
+.main-nav {
+	position: fixed;
+	top:0px;
+	width:100%;
+	height:45px;
+	z-index: 10001;
+	font-family: homizio, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	ul {
+		position: absolute;
+		bottom: 10px;
+		left: 5%;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			padding-right:8%;
+
+			&.spacer {
+				width: 180px;
+			}
+		}
+	}
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-top: 120px solid #fff;
+	cursor: pointer;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100000;
+	opacity: 0.93;
+	@extend .transition;
+
+	.arrow-label {
+	font-family: homizio, sans-serif;
+	font-size: 45px;
+	font-style: italic;
+	margin: 0 auto;
+	width: 120px;
+	top: -115px;
+	left: -60px;
+	position: relative;
+	z-index: 1000000;
+	color:#00a6f3;
+	cursor:pointer;
+}
+
+	&:hover {
+		border-left: 120px solid transparent;
+		border-right: 120px solid transparent;
+		border-top: 120px solid #00a6f3;
+
+		.arrow-label {color: #fff;}
+	}
+}
+.search-widget {
+	float: right;
+	margin-right: 30px;
+}
+
+.day{
+	cursor:pointer;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	border-radius: 100px;
+	line-height: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: homizio, sans-serif;
+	font-weight: 100;
+	box-shadow: 0px 0px 5px #333;
+	opacity: 0.9;
+	color: #00a6f3;
+	display: inline-block;
+	margin: 2%;
+	@extend .transition;
+
+
+	&:hover {
+		color:#fff;
+		background:#00a6f3;
+
+	}
+}
+
+.title {
+	display:none;
+}
+
+.day1content,.day2content,.day3content,.day4content,.day5content,.day6content,.day7content,.day8content {
+	display: none;
+	color: #fff;
+	position: absolute;
+	z-index: 100000000;
+	width: 90%;
+	height:100%;
+	margin-top: 100px;
+	margin-left: 40px;
+	margin-right:40px;
+	font-family: homizio, sans-serif;
+	font-size: 20px;
+
+	.x-close {
+		cursor:pointer;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		border-radius: 50px;
+		color:#fff;
+		background: #00a6f3;
+		font-size: 20px;
+		right: 0px;
+		top: -40px;
+		line-height: 50px;
+		text-align: center;
+		@extend .transition;
+
+		&:hover {
+			color:#00a6f3;
+			background: #fff;
+		}
+	}
+	a, a:link, a:visited, a:active {
+		color: yellow;
+		text-decoration: none;
+		cursor: pointer !important;
+		@extend .transition;
+	}
+	a:hover {
+		color: #00a6f3;
+	}
+
+	h1 {
+		font-size: 60px;
+		color: #00a6f3;
+	}
+	h2 {
+		font-size: 20px;
+		font-family: Arial, sans-serif;
+		font-weight: lighter;
+		background: #000;
+		padding: 10px;
+		margin: 15px;
+		margin-left: 0px;
+		margin-right: 0px;
+
+		&.short {
+			float: left;
+		}
+	}
+	.time {
+		color: #00a6f3;
+		font-size: 25px;
+		font-style: italic;
+		padding-right: 20px;
+		text-transform: uppercase;
+	}
+
+	.agenda {
+		overflow-y: scroll;
+		overflow: -moz-scrollbars-vertical;
+		height: 65%;
+	}
+}
+.indent {
+	margin-left:90px;
+}
+
+.maintext {
+font-family: homizio, sans-serif;
+font-size: 700%;
+padding: 2%;
+width: 95%;
+height: 400px;
+overflow-y: scroll;
+color: #efefef;
+text-shadow: 0px 0px 8px #000;
+}
